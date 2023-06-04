@@ -2,7 +2,7 @@
     "id": "wolfer-spheres5e",
     "name": "wolfer-spheres5e",
     "title": "Wolfer's Spheres5e",
-    "description": "Compendiums with the features from http://spheres5e.wikidot.com/. Spell points use the tertiery resource so they must be editted for compatibility.",
+    "description": "Compendiums with the features from http://spheres5e.wikidot.com/.",
     "version": "1.0.0",
     "authors": [
         {
@@ -465,6 +465,6 @@
             "system": "dnd5e"
         }
     ],
-    "manifest": "https://gitlab.com/encounterlibrary/my-content-module/-/raw/main/module.json",
-    "download": "https://gitlab.com/encounterlibrary/my-content-module/-/raw/main/my-content-module.zip"
+    "manifest": "https://github.com/WolferQT/Spheres5e/blob/main/module.json",
+    "download": "https://github.com/WolferQT/Spheres5e/blob/main/wolfer-spheres5e.zip"
   }
