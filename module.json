@@ -465,6 +465,6 @@
             "system": "dnd5e"
         }
     ],
-    "manifest": "https://github.com/WolferQT/Spheres5e/blob/main/module.json",
-    "download": "https://github.com/WolferQT/Spheres5e/blob/main/wolfer-spheres5e.zip"
-  }
+    "manifest": "https://raw.githubusercontent.com/WolferQT/Spheres5e/main/module.json",
+    "download": "https://github.com/WolferQT/Spheres5e/raw/main/wolfer-spheres5e.zip"
+}
