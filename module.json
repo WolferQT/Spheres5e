@@ -15,7 +15,9 @@
         "minimum": "10",
         "verified": "10"
     },
-	"system": ["dnd5e"],
+	"relationships": {
+		"system": ["dnd5e"]
+	},
     "packs": [
         {
             "name": "power",
