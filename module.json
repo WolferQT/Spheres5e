@@ -3,17 +3,17 @@
     "name": "wolfer-spheres5e",
     "title": "Wolfer's Spheres5e",
     "description": "Compendiums with the features from http://spheres5e.wikidot.com/.",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "authors": [
         {
             "name": "Wolfer"
         }
     ],
     "minimumCoreVersion": "0.8.6",
-    "compatibleCoreVersion": "9",
+    "compatibleCoreVersion": "11",
     "compatibility": {
-        "minimum": "10",
-        "verified": "10"
+        "minimum": "11",
+        "verified": "11"
     },
 	"relationships": {
 		"system": ["dnd5e"]
