@@ -1,473 +1,731 @@
 {
-    "id": "wolfer-spheres5e",
-    "name": "wolfer-spheres5e",
-    "title": "Wolfer's Spheres5e",
-    "description": "Compendiums with the features from http://spheres5e.wikidot.com/.",
-    "version": "1.0.1",
-    "authors": [
-        {
-            "name": "Wolfer"
-        }
-    ],
-    "minimumCoreVersion": "0.8.6",
-    "compatibleCoreVersion": "11",
-    "compatibility": {
-        "minimum": "10",
-        "verified": "11"
+  "id": "wolfer-spheres5e",
+  "title": "Wolfer's Spheres5e",
+  "description": "Compendiums with the features from http://spheres5e.wikidot.com/.",
+  "version": "1.0.0",
+  "authors": [
+    {
+      "name": "Wolfer"
+    }
+  ],
+  "compatibility": {
+    "minimum": "10",
+    "verified": "10"
+  },
+  "packs": [
+    {
+      "name": "power",
+      "label": "Spheres of Power",
+      "path": "packs/power",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
     },
-	"relationships": {
-		"system": ["dnd5e"]
-	},
-    "packs": [
-        {
-            "name": "power",
-            "label": "Spheres5e - Spheres of Power",
-            "path": "./packs/power.db",
-            "entity": "Item",
-            "type": "Item",
-            "system": "dnd5e"
-        },
-        {
-            "name": "power-features",
-            "label": "Spheres5e - Spheres of Power Features",
-            "path": "./packs/power-features.db",
-            "entity": "Item",
-            "type": "Item",
-            "system": "dnd5e"
-        },
-        {
-            "name": "might",
-            "label": "Spheres5e - Spheres of Might",
-            "path": "./packs/might.db",
-            "entity": "Item",
-            "type": "Item",
-            "system": "dnd5e"
-        },
-        {
-            "name": "might-features",
-            "label": "Spheres5e - Spheres of Might Features",
-            "path": "./packs/might-features.db",
-            "entity": "Item",
-            "type": "Item",
-            "system": "dnd5e"
-        },
-        {
-            "name": "alchemy",
-            "label": "Spheres5e - Alchemy Features",
-            "path": "./packs/alchemy.db",
-            "entity": "Item",
-            "type": "Item",
-            "system": "dnd5e"
-        },
-        {
-            "name": "athletics",
-            "label": "Spheres5e - Athletics Features",
-            "path": "./packs/athletics.db",
-            "entity": "Item",
-            "type": "Item",
-            "system": "dnd5e"
-        },
-        {
-            "name": "barrage",
-            "label": "Spheres5e - Barrage Features",
-            "path": "./packs/barrage.db",
-            "entity": "Item",
-            "type": "Item",
-            "system": "dnd5e"
-        },
-        {
-            "name": "barroom",
-            "label": "Spheres5e - Barroom Features",
-            "path": "./packs/barroom.db",
-            "entity": "Item",
-            "type": "Item",
-            "system": "dnd5e"
-        },
-        {
-            "name": "beastmastery",
-            "label": "Spheres5e - Beastmastery Features",
-            "path": "./packs/beastmastery.db",
-            "entity": "Item",
-            "type": "Item",
-            "system": "dnd5e"
-        },
-        {
-            "name": "berserker",
-            "label": "Spheres5e - Berserker Features",
-            "path": "./packs/berserker.db",
-            "entity": "Item",
-            "type": "Item",
-            "system": "dnd5e"
-        },
-        {
-            "name": "brute",
-            "label": "Spheres5e - Brute Features",
-            "path": "./packs/brute.db",
-            "entity": "Item",
-            "type": "Item",
-            "system": "dnd5e"
-        },
-        {
-            "name": "dual-wielding",
-            "label": "Spheres5e - Dual Wielding Features",
-            "path": "./packs/dual-wielding.db",
-            "entity": "Item",
-            "type": "Item",
-            "system": "dnd5e"
-        },
-        {
-            "name": "equipment",
-            "label": "Spheres5e - Equipment Features",
-            "path": "./packs/equipment.db",
-            "entity": "Item",
-            "type": "Item",
-            "system": "dnd5e"
-        },
-        {
-            "name": "fencing",
-            "label": "Spheres5e - Fencing Features",
-            "path": "./packs/fencing.db",
-            "entity": "Item",
-            "type": "Item",
-            "system": "dnd5e"
-        },
-        {
-            "name": "gladiator",
-            "label": "Spheres5e - Gladiator Features",
-            "path": "./packs/gladiator.db",
-            "entity": "Item",
-            "type": "Item",
-            "system": "dnd5e"
-        },
-        {
-            "name": "guardian",
-            "label": "Spheres5e - Guardian Features",
-            "path": "./packs/guardian.db",
-            "entity": "Item",
-            "type": "Item",
-            "system": "dnd5e"
-        },
-        {
-            "name": "leadership",
-            "label": "Spheres5e - Leadership Features",
-            "path": "./packs/leadership.db",
-            "entity": "Item",
-            "type": "Item",
-            "system": "dnd5e"
-        },
-        {
-            "name": "retribution",
-            "label": "Spheres5e - Retribution Features",
-            "path": "./packs/retribution.db",
-            "entity": "Item",
-            "type": "Item",
-            "system": "dnd5e"
-        },
-        {
-            "name": "scoundrel",
-            "label": "Spheres5e - Scoundrel Features",
-            "path": "./packs/scoundrel.db",
-            "entity": "Item",
-            "type": "Item",
-            "system": "dnd5e"
-        },
-        {
-            "name": "scout",
-            "label": "Spheres5e - Scout Features",
-            "path": "./packs/scout.db",
-            "entity": "Item",
-            "type": "Item",
-            "system": "dnd5e"
-        },
-        {
-            "name": "shield",
-            "label": "Spheres5e - Shield Features",
-            "path": "./packs/shield.db",
-            "entity": "Item",
-            "type": "Item",
-            "system": "dnd5e"
-        },
-        {
-            "name": "sniper",
-            "label": "Spheres5e - Sniper Features",
-            "path": "./packs/sniper.db",
-            "entity": "Item",
-            "type": "Item",
-            "system": "dnd5e"
-        },
-        {
-            "name": "tinkerer",
-            "label": "Spheres5e - Tinkerer Features",
-            "path": "./packs/tinkerer.db",
-            "entity": "Item",
-            "type": "Item",
-            "system": "dnd5e"
-        },
-        {
-            "name": "trap",
-            "label": "Spheres5e - Trap Features",
-            "path": "./packs/trap.db",
-            "entity": "Item",
-            "type": "Item",
-            "system": "dnd5e"
-        },
-        {
-            "name": "warleader",
-            "label": "Spheres5e - Warleader Features",
-            "path": "./packs/warleader.db",
-            "entity": "Item",
-            "type": "Item",
-            "system": "dnd5e"
-        },
-        {
-            "name": "wrestling",
-            "label": "Spheres5e - Wrestling Features",
-            "path": "./packs/wrestling.db",
-            "entity": "Item",
-            "type": "Item",
-            "system": "dnd5e"
-        },
-        {
-            "name": "mundane-weapons",
-            "label": "Spheres5e - Mundane Weapons",
-            "path": "./packs/mundane-weapons.db",
-            "entity": "Item",
-            "type": "Item",
-            "system": "dnd5e"
-        },
-        {
-            "name": "alteration",
-            "label": "Spheres5e - Alteration Features",
-            "path": "./packs/alteration.db",
-            "entity": "Item",
-            "type": "Item",
-            "system": "dnd5e"
-        },
-        {
-            "name": "conjuration",
-            "label": "Spheres5e - Conjuration Features",
-            "path": "./packs/conjuration.db",
-            "entity": "Item",
-            "type": "Item",
-            "system": "dnd5e"
-        },
-        {
-            "name": "creation",
-            "label": "Spheres5e - Creation Features",
-            "path": "./packs/creation.db",
-            "entity": "Item",
-            "type": "Item",
-            "system": "dnd5e"
-        },
-        {
-            "name": "dark",
-            "label": "Spheres5e - Dark Features",
-            "path": "./packs/dark.db",
-            "entity": "Item",
-            "type": "Item",
-            "system": "dnd5e"
-        },
-        {
-            "name": "death",
-            "label": "Spheres5e - Death Features",
-            "path": "./packs/death.db",
-            "entity": "Item",
-            "type": "Item",
-            "system": "dnd5e"
-        },
-        {
-            "name": "destruction",
-            "label": "Spheres5e - Destruction Features",
-            "path": "./packs/destruction.db",
-            "entity": "Item",
-            "type": "Item",
-            "system": "dnd5e"
-        },
-        {
-            "name": "divination",
-            "label": "Spheres5e - Divination Features",
-            "path": "./packs/divination.db",
-            "entity": "Item",
-            "type": "Item",
-            "system": "dnd5e"
-        },
-        {
-            "name": "enhancement",
-            "label": "Spheres5e - Enhancement Features",
-            "path": "./packs/enhancement.db",
-            "entity": "Item",
-            "type": "Item",
-            "system": "dnd5e"
-        },
-        {
-            "name": "fate",
-            "label": "Spheres5e - Fate Features",
-            "path": "./packs/fate.db",
-            "entity": "Item",
-            "type": "Item",
-            "system": "dnd5e"
-        },
-        {
-            "name": "illusion",
-            "label": "Spheres5e - Illusion Features",
-            "path": "./packs/illusion.db",
-            "entity": "Item",
-            "type": "Item",
-            "system": "dnd5e"
-        },
-        {
-            "name": "life",
-            "label": "Spheres5e - Life Features",
-            "path": "./packs/life.db",
-            "entity": "Item",
-            "type": "Item",
-            "system": "dnd5e"
-        },
-        {
-            "name": "light",
-            "label": "Spheres5e - Light Features",
-            "path": "./packs/light.db",
-            "entity": "Item",
-            "type": "Item",
-            "system": "dnd5e"
-        },
-        {
-            "name": "mind",
-            "label": "Spheres5e - Mind Features",
-            "path": "./packs/mind.db",
-            "entity": "Item",
-            "type": "Item",
-            "system": "dnd5e"
-        },
-        {
-            "name": "nature",
-            "label": "Spheres5e - Nature Features",
-            "path": "./packs/nature.db",
-            "entity": "Item",
-            "type": "Item",
-            "system": "dnd5e"
-        },
-        {
-            "name": "protection",
-            "label": "Spheres5e - Protection Features",
-            "path": "./packs/protection.db",
-            "entity": "Item",
-            "type": "Item",
-            "system": "dnd5e"
-        },
-        {
-            "name": "telekinesis",
-            "label": "Spheres5e - Telekinesis Features",
-            "path": "./packs/telekinesis.db",
-            "entity": "Item",
-            "type": "Item",
-            "system": "dnd5e"
-        },
-        {
-            "name": "time",
-            "label": "Spheres5e - Time Features",
-            "path": "./packs/time.db",
-            "entity": "Item",
-            "type": "Item",
-            "system": "dnd5e"
-        },
-        {
-            "name": "universal",
-            "label": "Spheres5e - Universal Features",
-            "path": "./packs/universal.db",
-            "entity": "Item",
-            "type": "Item",
-            "system": "dnd5e"
-        },
-        {
-            "name": "warp",
-            "label": "Spheres5e - Warp Features",
-            "path": "./packs/warp.db",
-            "entity": "Item",
-            "type": "Item",
-            "system": "dnd5e"
-        },
-        {
-            "name": "weather",
-            "label": "Spheres5e - Weather Features",
-            "path": "./packs/weather.db",
-            "entity": "Item",
-            "type": "Item",
-            "system": "dnd5e"
-        },
-        {
-            "name": "classes",
-            "label": "Spheres5e - Classes",
-            "path": "./packs/classes.db",
-            "entity": "Item",
-            "type": "Item",
-            "system": "dnd5e"
-        },
-        {
-            "name": "class-features",
-            "label": "Spheres5e - Class Features",
-            "path": "./packs/class-features.db",
-            "entity": "Item",
-            "type": "Item",
-            "system": "dnd5e"
-        },
-        {
-            "name": "subclasses",
-            "label": "Spheres5e - Subclasses",
-            "path": "./packs/subclasses.db",
-            "entity": "Item",
-            "type": "Item",
-            "system": "dnd5e"
-        },
-        {
-            "name": "subclass-features",
-            "label": "Spheres5e - Subclass Features",
-            "path": "./packs/subclass-features.db",
-            "entity": "Item",
-            "type": "Item",
-            "system": "dnd5e"
-        },
-        {
-            "name": "martial-traiditions",
-            "label": "Spheres5e - Martial Traditions",
-            "path": "./packs/martial-traiditions.db",
-            "entity": "Item",
-            "type": "Item",
-            "system": "dnd5e"
-        },
-        {
-            "name": "casting-traiditions",
-            "label": "Spheres5e - Casting Traditions",
-            "path": "./packs/casting-traiditions.db",
-            "entity": "Item",
-            "type": "Item",
-            "system": "dnd5e"
-        },
-        {
-            "name": "casting-traiditions-features",
-            "label": "Spheres5e - Casting Traditions Features",
-            "path": "./packs/casting-traiditions-features.db",
-            "entity": "Item",
-            "type": "Item",
-            "system": "dnd5e"
-        },
-        {
-            "name": "feats",
-            "label": "Spheres5e - Feats",
-            "path": "./packs/feats.db",
-            "entity": "Item",
-            "type": "Item",
-            "system": "dnd5e"
-        },
-        {
-            "name": "macros",
-            "label": "Spheres5e - Macros",
-            "path": "./packs/macros.db",
-            "entity": "Macro",
-            "type": "Macro",
-            "system": "dnd5e"
-        }
-    ],
-    "manifest": "https://raw.githubusercontent.com/WolferQT/Spheres5e/main/module.json",
-    "download": "https://github.com/WolferQT/Spheres5e/raw/main/wolfer-spheres5e.zip"
+    {
+      "name": "power-features",
+      "label": "Spheres of Power Features",
+      "path": "packs/power-features",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "might",
+      "label": "Spheres of Might",
+      "path": "packs/might",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "might-features",
+      "label": "Spheres of Might Features",
+      "path": "packs/might-features",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "alchemy",
+      "label": "Alchemy Features",
+      "path": "packs/alchemy",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "athletics",
+      "label": "Athletics Features",
+      "path": "packs/athletics",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "barrage",
+      "label": "Barrage Features",
+      "path": "packs/barrage",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "barroom",
+      "label": "Barroom Features",
+      "path": "packs/barroom",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "beastmastery",
+      "label": "Beastmastery Features",
+      "path": "packs/beastmastery",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "berserker",
+      "label": "Berserker Features",
+      "path": "packs/berserker",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "brute",
+      "label": "Brute Features",
+      "path": "packs/brute",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "dual-wielding",
+      "label": "Dual Wielding Features",
+      "path": "packs/dual-wielding",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "equipment",
+      "label": "Equipment Features",
+      "path": "packs/equipment",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "fencing",
+      "label": "Fencing Features",
+      "path": "packs/fencing",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "gladiator",
+      "label": "Gladiator Features",
+      "path": "packs/gladiator",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "guardian",
+      "label": "Guardian Features",
+      "path": "packs/guardian",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "leadership",
+      "label": "Leadership Features",
+      "path": "packs/leadership",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "retribution",
+      "label": "Retribution Features",
+      "path": "packs/retribution",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "scoundrel",
+      "label": "Scoundrel Features",
+      "path": "packs/scoundrel",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "scout",
+      "label": "Scout Features",
+      "path": "packs/scout",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "shield",
+      "label": "Shield Features",
+      "path": "packs/shield",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "sniper",
+      "label": "Sniper Features",
+      "path": "packs/sniper",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "tinkerer",
+      "label": "Tinkerer Features",
+      "path": "packs/tinkerer",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "trap",
+      "label": "Trap Features",
+      "path": "packs/trap",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "warleader",
+      "label": "Warleader Features",
+      "path": "packs/warleader",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "wrestling",
+      "label": "Wrestling Features",
+      "path": "packs/wrestling",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "mundane-weapons",
+      "label": "Mundane Weapons",
+      "path": "packs/mundane-weapons",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "alteration",
+      "label": "Alteration Features",
+      "path": "packs/alteration",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "conjuration",
+      "label": "Conjuration Features",
+      "path": "packs/conjuration",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "creation",
+      "label": "Creation Features",
+      "path": "packs/creation",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "dark",
+      "label": "Dark Features",
+      "path": "packs/dark",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "death",
+      "label": "Death Features",
+      "path": "packs/death",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "destruction",
+      "label": "Destruction Features",
+      "path": "packs/destruction",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "divination",
+      "label": "Divination Features",
+      "path": "packs/divination",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "enhancement",
+      "label": "Enhancement Features",
+      "path": "packs/enhancement",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "fate",
+      "label": "Fate Features",
+      "path": "packs/fate",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "illusion",
+      "label": "Illusion Features",
+      "path": "packs/illusion",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "life",
+      "label": "Life Features",
+      "path": "packs/life",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "light",
+      "label": "Light Features",
+      "path": "packs/light",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "mind",
+      "label": "Mind Features",
+      "path": "packs/mind",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "nature",
+      "label": "Nature Features",
+      "path": "packs/nature",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "protection",
+      "label": "Protection Features",
+      "path": "packs/protection",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "telekinesis",
+      "label": "Telekinesis Features",
+      "path": "packs/telekinesis",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "time",
+      "label": "Time Features",
+      "path": "packs/time",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "universal",
+      "label": "Universal Features",
+      "path": "packs/universal",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "warp",
+      "label": "Warp Features",
+      "path": "packs/warp",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "weather",
+      "label": "Weather Features",
+      "path": "packs/weather",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "classes",
+      "label": "Classes",
+      "path": "packs/classes",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "class-features",
+      "label": "Class Features",
+      "path": "packs/class-features",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "subclasses",
+      "label": "Subclasses",
+      "path": "packs/subclasses",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "subclass-features",
+      "label": "Subclass Features",
+      "path": "packs/subclass-features",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "martial-traiditions",
+      "label": "Martial Traditions",
+      "path": "packs/martial-traiditions",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "casting-traiditions",
+      "label": "Casting Traditions",
+      "path": "packs/casting-traiditions",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "casting-traiditions-features",
+      "label": "Casting Traditions Features",
+      "path": "packs/casting-traiditions-features",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "feats",
+      "label": "Feats",
+      "path": "packs/feats",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "macros",
+      "label": "Macros",
+      "path": "packs/macros",
+      "type": "Macro",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    }
+  ],
+  "packFolders": [
+	{
+	  "name": "Spheres5e Content",
+      "sorting": "m",
+      "color": "#315203",
+      "packs": [
+        "classes",
+        "might",
+        "might-features",
+		"martial-traiditions",
+		"power",
+		"power-features",
+		"casting-traiditions",
+		"macros"
+      ],
+	  "folders": [
+	    {
+		  "name": "Spheres of Might",
+		  "sorting": "a",
+		  "color": "#640000",
+		  "packs": [
+			"alchemy",
+			"athletics",
+			"barrage",
+			"barroom",
+			"beastmastery",
+			"berserker",
+			"brute",
+			"dual-wielding",
+			"equipment",
+			"fencing",
+			"gladiator",
+			"guardian",
+			"leadership",
+			"retribution",
+			"scoundrel",
+			"scout",
+			"shield",
+			"sniper",
+			"tinkerer",
+			"trap",
+			"warleader",
+			"wrestling"
+		  ]
+		},
+		{
+		  "name": "Spheres of Power",
+		  "sorting": "a",
+		  "color": "#000064",
+		  "packs": [
+			"alteration",
+			"conjuration",
+			"creation",
+			"dark",
+			"death",
+			"destruction",
+			"divination",
+			"enhancement",
+			"fate",
+			"illusion",
+			"life",
+			"light",
+			"mind",
+			"nature",
+			"protection",
+			"telekinesis",
+			"time",
+			"universal",
+			"warp",
+			"weather"
+		  ]
+		},
+		{
+		  "name": "Miscellaneous",
+		  "sorting": "a",
+		  "color": "#006400",
+		  "packs": [
+			"casting-traiditions-features",
+			"class-features",
+			"mundane-weapons",
+			"subclasses",
+			"subclass-features"
+		  ]
+		}
+	  ]
+	}
+  ],
+  "manifest": "https://raw.githubusercontent.com/WolferQT/Spheres5e/main/module.json",
+  "download": "https://github.com/WolferQT/Spheres5e/raw/main/wolfer-spheres5e.zip",
+  "relationships": {
+    "systems": [
+      {
+        "id": "dnd5e",
+        "type": "system"
+      }
+    ]
+  },
+  "url": "https://github.com/WolferQT/Spheres5e"
 }
