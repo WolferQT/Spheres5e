@@ -2,7 +2,7 @@
   "id": "wolfer-spheres5e",
   "title": "Wolfer's Spheres5e",
   "description": "Compendiums with the features from http://spheres5e.wikidot.com/.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "authors": [
     {
       "name": "Wolfer"
@@ -10,7 +10,7 @@
   ],
   "compatibility": {
     "minimum": "10",
-    "verified": "10"
+    "verified": "11"
   },
   "packs": [
     {
