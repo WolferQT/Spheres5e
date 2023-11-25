@@ -1,0 +1,48 @@
+<div class="flexrow">
+	<div class="flexcol">
+		<ul class="destructiveBlastSection flex1 smallMargin">
+			{{#each blastTypes}}
+				<li onClick="DestructiveBlast.updateBlastType(this)" class="smallerPadding">
+					<ul class="noStyleList flexrow">
+						<li><b>{{name}}</b></li>
+						<li><i class="fa-solid fa-sun"></i> {{labels.damageTypes}}</li>
+						<li><i class="fa-solid fa-floppy-disk"></i> {{labels.save}}{{#unless labels.save}}DC {{../defaultSaveDC}} Dexterity{{/unless}}</li>
+					</ul>
+					<p class="maxWidth"><b>Rider Effect:</b> {{system.chatFlavor}}</p>
+					<div class="Hidden">{{{system.description.value}}}</div>
+				</li>
+				{{#unless @last}}<hr></hr>{{/unless}}
+			{{/each}}
+		</ul>
+		<ul class="destructiveBlastSection flex1 smallMargin">
+			{{#each blastShapes}}
+				<li onClick="DestructiveBlast.updateBlastShape(this)" class="smallerPadding">
+					<ul class="noStyleList">
+						<li><b>{{name}}</b></li>
+						<li><b>Range:</b> {{labels.range}}</li>
+						<li><b>Target:</b> {{labels.target}}</li>
+						<li><b>Duration:</b> {{labels.duration}}{{#if system.components.concentration}} (Concentration){{/if}}{{#unless labels.duration}}Instantaneous{{/unless}}</li>
+					</ul>
+					<div class="Hidden">{{{system.description.value}}}</div>
+				</li>
+				{{#unless @last}}<hr></hr>{{/unless}}
+			{{/each}}
+		</ul>
+	</div>
+	<div class="flexcol">
+		<div class="destructiveBlastSection smallMargin smallPadding">
+			<h2>Destructive Blast</h2>
+			<p><b>Range:</b> <span id="destructiveBlastFinalRange"></span></p>
+			<p><b>Target:</b> <span id="destructiveBlastFinalTarget"></span></p>
+			<p><b>Duration:</b> <span id="destructiveBlastFinalDuration"></span></p>
+			<p><b>Save:</b> <span id="destructiveBlastFinalSave" data-spelldc="{{defaultSaveDC}}">DC {{defaultSaveDC}} Dexterity</span></p>
+			<p><b>Damage:</b> <span id="destructiveBlastDamageDice">{{damageDice.dice}}d8</span><span id="destructiveBlastAugmentDice" class="Hidden">{{damageDice.augmentDice}}d8</span></p>
+			<p><b>Damage Type:</b> <span id="destructiveBlastFinalDamageType"></span></p>
+			<p><b>Rider:</b> <span id="destructiveBlastFinalRider"></span></p>
+			<div class="flexrow alignCenter"><label for="destructiveBlastAugmentDamage"><b>Augment 1 sp:</b> deal 1d8 damage + 1d8 damage per 2 levels instead. ({{damageDice.augmentDice}}d8)</label><input type="checkbox" id="destructiveBlastAugmentDamage" onChange="DestructiveBlast.toggleHidden('destructiveBlastDamageDice', 'destructiveBlastAugmentDice')"></input></div>
+			<div id="destructiveBlastTypeAugments"></div>
+			<div id="destructiveBlastShapeAugments"></div>
+			<div>Spell Points: <span id="destructiveBlastSpellPoitns">0</span></div>
+		</div>
+	</div>
+</div>

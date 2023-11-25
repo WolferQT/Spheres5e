@@ -2,7 +2,7 @@
   "id": "wolfer-spheres5e",
   "title": "Wolfer's Spheres5e",
   "description": "Compendiums with the features from http://spheres5e.wikidot.com/.",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "authors": [
     {
       "name": "Wolfer"
@@ -619,10 +619,32 @@
       }
     },
     {
+      "name": "fighting-styles",
+      "label": "Fighting Styles",
+      "path": "packs/fighting-styles",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
       "name": "macros",
       "label": "Macros",
       "path": "packs/macros",
       "type": "Macro",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "conjuration-creatures",
+      "label": "Conjuration Creatures",
+      "path": "packs/conjuration-creatures",
+      "type": "Actor",
       "system": "dnd5e",
       "ownership": {
         "PLAYER": "OBSERVER",
@@ -711,11 +733,26 @@
 			"class-features",
 			"mundane-weapons",
 			"subclasses",
-			"subclass-features"
+			"subclass-features",
+			"fighting-styles",
+			"conjuration-creatures"
 		  ]
 		}
 	  ]
 	}
+  ],
+  "scripts": [
+	"scripts/destruction-sphere.js"
+  ],
+  "languages": [
+	{
+      "lang": "en",
+      "name": "English",
+      "path": "languages/en.json"
+    }
+  ],
+  "styles": [
+	"styles/wolfer-spheres5e.css"
   ],
   "manifest": "https://raw.githubusercontent.com/WolferQT/Spheres5e/main/module.json",
   "download": "https://github.com/WolferQT/Spheres5e/raw/main/wolfer-spheres5e.zip",

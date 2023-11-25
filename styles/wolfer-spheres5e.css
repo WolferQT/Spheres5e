@@ -1,0 +1,47 @@
+.destructiveBlastSection {
+	padding: 0;
+	border-color: var(--color-border-dark-1:);
+	border-width: 1px;
+	border-style: solid;
+	box-shadow: inset 0px 0px 20px 0px var(--color-shadow-dark);
+	list-style: none;
+	overflow-y: scroll;
+	font-size: 0.9em;
+}
+
+.destructiveBlastSection > hr {
+	margin: 0;
+}
+
+.noStyleList {
+	list-style: none;
+}
+
+.maxWidth {
+	max-width: 50vw;
+}
+
+.smallMargin {
+	margin: 0.5em;
+}
+
+.smallPadding {
+	padding: 0.5em;
+}
+
+.blastSelected {
+	box-shadow: inset 0px 0px 25px 0px var(--color-shadow-dark);
+	box-sizing: border-box;
+}
+
+.smallerPadding {
+	padding: 0.3em;
+}
+
+.Hidden {
+	display: none;
+}
+
+.alignCenter {
+	align-items: center;
+}
