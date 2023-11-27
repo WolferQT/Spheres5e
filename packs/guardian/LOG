@@ -1,7 +1,0 @@
-2023/11/26-10:37:20.055 144c Recovering log #559
-2023/11/26-10:37:20.060 144c Delete type=0 #559
-2023/11/26-10:37:20.060 144c Delete type=3 #558
-2023/11/26-11:28:38.260 4410 Level-0 table #563: started
-2023/11/26-11:28:38.265 4410 Level-0 table #563: 83731 bytes OK
-2023/11/26-11:28:38.267 4410 Delete type=0 #561
-2023/11/26-11:28:38.268 4410 Manual compaction at level-0 from '!items!0jawoPeufYt04avK' @ 72057594037927935 : 1 .. '!items!zcW2YyYM9WCgpozK' @ 0 : 0; will stop at (end)

@@ -1,4 +1,5 @@
 *.lock
-**/LOG
-**/*.log
-**/*.old
+packs/*
+!*/
+!**/CURRENT
+!**/*.ldb
