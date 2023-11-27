@@ -1,15 +1,3 @@
-const logStart = "Wolfer Spheres5e | ";
-console.log(logStart + "destructive-blast");
-
-Hooks.on("init", function() {
-  console.log(logStart + "This code runs once the Foundry VTT software begins its initialization workflow.");
-});
-
-Hooks.on("ready", function() {
-  console.log(logStart + "This code runs once core initialization is ready and game data is available.");
-  new DestructiveBlastConfig().render(true, {actorId: "Hy4IemL9xe2qyhDa"});
-});
-
 /**
  * A single DestructiveBlast.
  * @typedef {Object} DestructiveBlast
