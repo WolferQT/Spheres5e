@@ -139,11 +139,3 @@ class DestructiveBlastConfig extends FormApplication{
 		}
 	}
 }
-
-Hooks.on("dnd5e.preUseItem", item => {
-	//console.log(logStart + "preuse");
-	if(item.name == "Destructive Blast"){
-		console.log(logStart + "Destructive Blast Used");
-		
-	}
-});
